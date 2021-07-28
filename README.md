@@ -1,0 +1,2 @@
+# Junior-Web-Developer-Digitalent-Kominfo
+Program Vocational School Graduate Academy (VSGA) merupakan program pelatihan dan sertifikasi berbasis kompetensi nasional yang ditujukan bagi lulusan SMK/sederajat serta Diploma 3 dan 4  yang belum bekerja dan memiliki latar belakang pendidikan sesuai dengan skema pelatihan masing-masing. Program VSGA terdiri dari Bimbingan Teknis dan Sertifikasi yang diselenggarakan secara luring dan Pelatihan Intensif dan Sertifikasi yang diselenggarakan secara daring.
