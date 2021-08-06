@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table Menggunakan Framework Bootstrap 5</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <!-- CLass Container Untuk Membuat Lebar tidak full -->
+  <div class="container my-3">
+    <!-- Class Bio -->
+    <div class="Penulis d-flex justify-content-center">
+      <div class="card" style="width: 18rem;">
+        <img src="dama3.png" class="card-img-top text-center" height="250" alt="...">
+        <div class="card-body justify-content-center">
+          <h6 class="card-title text-center text-decoration-none"> <a href="http://rachmad-dama.herokuapp.com" target="_blank"> Rachmad Ananda Damaputra</a></h6>
+          <p class="text-center">C1855201073</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Property Tabel -->
+    <h3>Tabel Data Mahasiswa</h3>
+    <table class="table">
+      <thead class="table-primary">
+        <tr>
+          <th scope="col">No</th>
+          <th scope="col">Nama</th>
+          <th scope="col">NIM</th>
+          <th scope="col">Prodi</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Rachmad Ananda Damaputra</td>
+          <td>C1855201073</td>
+          <td>Teknik Informatika</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Arya Lestaluhu</td>
+          <td>C1857201052</td>
+          <td>Sistem Informasi</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Anton Susanto</td>
+          <td>C1852801021</td>
+          <td>Manajemen Informasi</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+
+</html>
