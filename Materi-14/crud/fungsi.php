@@ -1,7 +1,7 @@
 <?php
 include 'koneksi.php';
 
-if (isset($_GET['tambahpasien'])) {
+if ($_GET['act'] == 'tambahpasien') {
   $id_pasien = $_POST['id_pasien'];
   $nama = $_POST['nama'];
   $alamat = $_POST['alamat'];
@@ -10,7 +10,7 @@ if (isset($_GET['tambahpasien'])) {
   $jk = $_POST['jk'];
 
   //query Tambah
-  $querytambah =  mysqli_query($koneksi, "INSERT INTO tb_pasien VALUES('$id_pasien' , '$nama' , '$alamat' , '$nik_ktp' , ' $keluhan ')");
+  $querytambah =  mysqli_query($koneksi, "INSERT INTO tb_pasien VALUES('$id_pasien' , '$nama' , '$alamat' , '$nik_ktp' , ' $keluhan ', ' $jk ')");
 
   if ($querytambah) {
     # code redicet setelah insert ke index
@@ -27,7 +27,7 @@ if (isset($_GET['tambahpasien'])) {
   $jk = $_POST['jk'];
 
   //query update
-  $queryupdate = mysqli_query($koneksi, "UPDATE tb_pasien SET nama='$nama' , alamat='$alamat' , nik_ktp='$nik_ktp' , keluhan='$keluhan' WHERE id_pasien='$id_pasien' ");
+  $queryupdate = mysqli_query($koneksi, "UPDATE tb_pasien SET nama='$nama' , alamat='$alamat' , nik_ktp='$nik_ktp' , keluhan='$keluhan', jk='$jk' WHERE id_pasien='$id_pasien' ");
 
   if ($queryupdate) {
     # credirect ke page index
@@ -36,7 +36,7 @@ if (isset($_GET['tambahpasien'])) {
     echo "ERROR, data gagal diupdate" . mysqli_error($koneksi);
   }
 } elseif ($_GET['act'] == 'deletepasien') {
-  $id_pasien = $_GET['id_pasien'];
+  $id_pasien = $_GET['id'];
 
   //query hapus
   $querydelete = mysqli_query($koneksi, "DELETE FROM tb_pasien WHERE id_pasien = '$id_pasien'");

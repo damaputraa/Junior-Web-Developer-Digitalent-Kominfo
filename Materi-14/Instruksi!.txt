@@ -1,0 +1,9 @@
+Step by Step Menjalankan CRUD Pasien Sederhana
+
+*---------------------------------------------------------------*
+
+- Jalankan PHP Serve dan buka phpmyadmin
+- Import database bernama Pasien.sql ke phpserver
+- ketik di browser localhost/(nama-direktorinya) dan tekan enter
+
+*---------------------------------------------------------------*

@@ -7,9 +7,10 @@ if (isset($_POST['submit'])) {
 
   $query = mysqli_query($koneksi, "SELECT * FROM tb_user WHERE username = '" . $username . "' AND password = '" . $pass . "' ");
 
+  // Cek apakah data null atau tidak dengan Isset
   $data = mysqli_fetch_array($query);
-  $user_login = $data['username'];
-  $user_role = $data['user_role'];
+  $user_login = isset($data['username']) ? $data['username'] : '';
+  $user_role = isset($data['user_role']) ? $data['user_role'] : '';
 
 
   if (mysqli_num_rows($query) > 0) {
@@ -51,11 +52,11 @@ if (isset($_POST['submit'])) {
             <?php } ?>
             <form name="login_form" method="post">
               <div class="form-floating mb-3">
-                <input class="form-control" require name="username" id="username">
+                <input class="form-control" require name="username" id="username" type="text" placeholder="Username" autocomplete="off">
                 <label for="floatingInput">Username</label>
               </div>
               <div class="form-floating mb-3">
-                <input require name="password" id="password" class="form-control" type="password" id="floatingPassword" placeholder="Password">
+                <input require name="password" id="password" class="form-control" type="password" id="floatingPassword" placeholder="Password" autocomplete="off">
                 <label for="floatingPassword">Password</label>
 
                 <div class="d-grid my-3">
@@ -63,7 +64,7 @@ if (isset($_POST['submit'])) {
                 </div>
                 <hr class="my-4">
                 <div class="d-grid">
-                  <p class="text-red">
+                  <p class="text-red" target="">
                     <i class="me-2"></i> *Username dan Password : admin
                   </p>
                 </div>

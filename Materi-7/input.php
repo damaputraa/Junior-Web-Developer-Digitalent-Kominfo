@@ -10,12 +10,68 @@
 </head>
 
 <body>
+	<form action="cek.php" method="POST" class="p-3">
+	<h3>Form Input Data Mahasiswa STMIK</h3>
+	<table>
+		<tr class="pb-3">
+			<td>Nama</td>
+			<td>: <input type="text" name="nama"></td>
+		</tr>
+		
+		<tr class="pb-3">
+			<td>Alamat</td>
+			<td>: <input type="text" name="alamat"></td>
+		</tr>
+
+		<tr class="pb-3">
+			<td>Tempat</td>
+			<td>: <input type="text" name="tempat"></td>
+		</tr>
+
+		<tr class="pb-3">
+			<td>Jenis Kelamin</td>
+			<td>: 
+				<select name="jk" id="">
+					<option value="Laki-Laki">Laki-Laki</option>
+					<option value="Perempuan">Perempuan</option>
+				</select>
+			</td>
+		</tr>
+
+		<tr class="pb-3">
+			<td>Usia</td>
+			<td>: <input type="number" name="usia"></td>
+		</tr>
+
+	</table>
+	</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	<form action="cek.php" class=" p-3" method="post">
 			<h4>Form Validasi :</h4>
 		<table>
 			<tr class="pb-2">
 				<td>Nama </td>
-				<td>: <input type="text" name="nama" required></td>
+				<td>: <input type="text" name="nama" ></td>
 			</tr>
 			<tr class="">
 				<td>Alamat</td>

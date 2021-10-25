@@ -8,7 +8,7 @@
  $usia = $_POST['usia']; 
  
  if($nama == ""){ 
- header("location:input.php?nama=kosong"); 
+print "Nama Tidak Boleh Kosong" ; 
  }else{ 
  echo "Nama 					: ". $nama; echo "<br>";
  echo "Alamat 				: ". $alamat; echo "<br>";
@@ -16,6 +16,7 @@
  echo "Jenis Kelamin 	: ". $jk; echo "<br>";
  echo "Usia 					: ". $usia; echo "<br>";
 
-} 	
+} 
+echo "<br>"	
 ?>
 <a href="input.php" class="btn btn-danger">Kembali</a>
